@@ -4,39 +4,46 @@
   <meta charset="utf-8">
   <title></title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
   <div class="content">
-    <h1 class="">Stay up to date with ecommerce trends with Shopify's newsletters</h1>
+    <h1 class="">Stay up to date with ecommerce trends with Shopify’s newsletter</h1>
     <hr align="left" width="3%">
     <p class="subscribe">Subscribe for free marketing tips</p>
 
-    <form class="grid form">
+    <form class="grid form" method="post" novalidate>
       <div class="unit s-1-2">
         <input class="form-content" type="email" id="email" placeholder="Email Address" required aria-describedby="email-error">
         <p class="error-message micro" id="email-error">
-          <span class="warning-label">Please enter a valid email address</span>
+          Please enter a valid email address
         </p>
       </div>
 
-      <div class="unit s-1-2">
-        <fieldset class="form-content">
-          <select id="interested" required aria-describedby="interested-error">
-            <option value="">interested in</option>
-            <option value="">Alberta</option>
-            <option value="">British Columbia</option>
-            <option value="">Manitoba</option>
-            <option value="">New Brunswick</option>
+      <div class="dropdown unit s-1-2">
+          <select class="form-content dropdown-text" id="interested" required aria-describedby="interested-error">
+            <option value="">Interested in...</option>
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+            <option value="">Option 3</option>
+            <option value="">Option 4</option>
           </select>
-        </fieldset>
       </div>
-    </form>
 
-    <div class="unit s-1">
-      <button class="btn" type="submit">Sign Up Now</button>
+      <div class="unit s-1">
+        <button class="btn" type="submit">Sign up now</button>
+      </div>
     </div>
-  </div>
+  </form>
+
+  <footer class="text-center">
+    <a class="unsub"><u>Unsubscribe</u></a>
+  </footer>
+
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 
 </body>
 </html>

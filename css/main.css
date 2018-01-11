@@ -10,14 +10,15 @@ html {
 
 .content {
   padding-top: 5rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
+  margin-left: 22rem;
+  margin-right: 22rem;
 }
 
 h1 {
   color: white;
   text-align: left;
   font-size: 24px;
+  line-height: 2rem;
 }
 
 hr {
@@ -41,29 +42,61 @@ hr {
 }
 
 .btn{
+  margin-top: .5rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   background-color: #5c6ac4;
   color: white;
   border-radius: 5px;
-  padding: 1rem;
-  width: 30rem;
+  width: 100%;
   border-color: #5c6ac4;
+  font-size: 16px;
 }
 
 .form-content {
-  padding: 1em;
+  padding-left: 1rem;
   border-radius: 5px;
   vertical-align: middle;
   border: none;
+  height: calc(1.5rem + 1rem );
   }
+
+.dropdown {
+  padding-left: 1rem;
+}
+
+.dropdown-text {
+  color: #7b7b7b;
+}
+
 
   .error-message {
     display: none;
-    color: #f33;
+    color: red;
   }
 
+  .is-validated > .error-message:first-child,
+  .is-validated input:invalid + .error-message {
+    display: block;
+  }
 
+  button:focus,
+  button:hover,
+  .btn:focus,
   .btn:hover {
-    color: #000639;
+    color: white;
     background-color: #5c6ac4;
-    border-color: #000639;
   }
+
+.unsub {
+  color: white;
+  border-bottom: 1rem;
+  font-size: 10px;
+  position: absolute;
+  bottom: 20px;
+
+}
+
+a:hover {
+  color: red;
+}
