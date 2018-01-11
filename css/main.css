@@ -31,6 +31,7 @@ hr {
   text-align: left;
   padding-top: 2rem;
   font-size: 16px;
+  font-weight: 200;
 }
 
 h3 {
@@ -55,7 +56,7 @@ hr {
 
 .form-content {
   padding-left: 1rem;
-  border-radius: 5px;
+  border-radius: 8px;
   vertical-align: middle;
   border: none;
   height: calc(1.5rem + 1rem );
@@ -98,5 +99,5 @@ hr {
 }
 
 a:hover {
-  color: red;
+  color: #c23628;
 }
